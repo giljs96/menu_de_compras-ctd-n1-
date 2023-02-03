@@ -1,3 +1,15 @@
+lanches = {
+    "hamburguer": 10.50,
+    "cachorro quente": 8.50,
+    "salgadinho": 6.80,
+    "prato feito": 20.50,
+}
+bebidas = {
+    "água": 2.50,
+    "refrigerante": 5.50,
+    "refresco": 4.80,
+    "suco": 7.50,
+}
 print('ESCOLHA SUA REFEIÇÃO!!!')
 escolha_cliente = []
 continuacao = True
