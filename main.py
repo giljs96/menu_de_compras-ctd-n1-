@@ -10,6 +10,13 @@ bebidas = {
     "refresco": 4.80,
     "suco": 7.50,
 }
+forma_de_pagamento = {
+    1: 'dinheiro',
+    2: 'pix',
+    3: 'cartão de débito',
+    4: 'cartão de crédito',
+}
+
 print('ESCOLHA SUA REFEIÇÃO!!!')
 escolha_cliente = []
 continuacao = True
@@ -79,6 +86,11 @@ while continuacao_bebida:
         escolha = int(input('Digite 1 para finalizar o pedido\nDigite 2 para pedir mais bebida\nR: '))
         if escolha == 1:
             saida_bebida = False
-
-    print(f'Valor total do pedido: R${valor_momento:.2f}')
+    valor_total = valor_momento
+    print(f'Valor total do pedido: R${valor_total:.2f}')
     continuacao_bebida = False
+form_pagamento = int(input(f'***QUAL A FORMA DE PAGAMENTO?***\n1- DINHEIRO\n2- PIX\n3- DÉBITO\n4- CRÉDITO\n'))
+if forma_de_pagamento == 4:
+    print(f'Não há desconto para essa forma de pagamento!\n')
+else:
+    print(f'Desconto de 5%: R${valor_total - (valor_total*5/100)}')
