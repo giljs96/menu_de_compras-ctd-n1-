@@ -55,7 +55,7 @@ while continuacao:
 
 continuacao_bebida = True
 while continuacao_bebida:
-    print('OPÇÕES DE BEBIDA\n1- água\n2- refrigerante\n3-refresco\n4-suco')
+    print('OPÇÕES DE BEBIDA\n1- água -- R$2,50\n2- refrigerante R$5,50\n3-refresco R$4,80\n4-suco R$7,50')
     escolha_bebida = int(input('Digite o código do produto: '))
     valor_bebida = float(0)
     if escolha_bebida == 1:
